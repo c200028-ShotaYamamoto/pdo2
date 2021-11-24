@@ -1,5 +1,7 @@
 ﻿<?php
 require_once("functions.php");
+define('MAXITEM',5);    // 最大表示件数 
+
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
     if(isset($_POST["name"])){
             $name = htmlspecialchars($_POST["name"], ENT_QUOTES, 'UTF-8');
